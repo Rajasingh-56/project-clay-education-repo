@@ -8,8 +8,8 @@ import Navigation from "./pages/Navigation";
 
 function App() {
   return (
-    <Router>
-      <Routes>
+    <Router basename="/project-clay-education-repo">
+      <Routes >
         <Route path="/" element={<Navigation />}>
           <Route index element={<Home />} />
         </Route>
