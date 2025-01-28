@@ -2,7 +2,7 @@
 
 .home-section {
   background-color: rgb(252, 247, 238);
-  padding: 4rem 2rem;
+  padding: 8rem 2rem;
   color: #000;
   // margin-top: 4rem
 }
@@ -43,16 +43,16 @@
 
 .pod-user {
   transform: rotate(-20deg);
-  left: -12rem;
   z-index: 2;
   position: absolute;
-  top: -8rem;
+  top: -15rem;
+  left: -10rem;
 }
 .brand-user {
   transform: rotate(10deg);
   z-index: 1;
   position: absolute;
-  top: 2rem;
+  top: -3rem;
   left: -10rem;
 }
 
@@ -60,41 +60,41 @@
   transform: rotate(-10deg);
   z-index: 0;
   position: absolute;
-  top: 13rem;
+  top: 8rem;
   left: -5rem;
 }
 .prince-user {
   transform: rotate(20deg);
   z-index: 2;
   position: absolute;
-  top: -8rem;
-  right: -12rem;
+  top: -15rem;
+  right: -10rem;
 }
 .ai-user {
-  transform: rotate(10deg);
+  transform: rotate(-10deg);
   z-index: 1;
   position: absolute;
-  top: 3rem;
+  top: -3rem;
   right: -10rem;
 }
 .startup-user {
-  transform: rotate(-20deg);
+  transform: rotate(10deg);
   z-index: 0;
   position: absolute;
-  top: 13rem;
+  top: 8rem;
   right: -5rem;
 }
 
 .clr-yellow {
-  background-color: yellow;
+  background-color: rgb(255, 219, 71);
   font-size: 0.9rem;
 }
 .clr-blue {
-  background-color: rgb(50, 170, 218);
+  background-color: rgb(177, 222, 255);
   font-size: 0.9rem;
 }
 .clr-pink {
-  background-color: rgb(219, 120, 137);
+  background-color: rgb(255, 172, 207);
   font-size: 0.9rem;
 }
 
@@ -109,7 +109,6 @@
     // background-color: red;
     padding: 0.5rem 1.5rem;
     border-radius: 50px;
-    // position: relative;
 
     .user-image {
       display: flex;
