@@ -9,9 +9,10 @@ import Navigation from "./pages/Navigation";
 function App() {
   return (
     <Router basename="/project-clay-education-repo">
+        <Navigation/>
       <Routes >
-        <Route path="/" element={<Navigation />}>
-          <Route index element={<Home />} />
+        <Route path="/" element={<Home />}>
+          {/* <Route index element={<Home />} /> */}
         </Route>
       </Routes>
     </Router>

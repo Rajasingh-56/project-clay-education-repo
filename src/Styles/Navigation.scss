@@ -1,58 +1,66 @@
+@use "../Styles/mixin.scss";
 
-.navhigation-section{
-    display: flex;
+.navigation-section {
+  background: #000;
 }
+
 .navigation {
   display: flex;
-  flex: 4;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 0.8rem;
   background-color: #000;
-  img {
-    height: 3rem;
-    margin-left: 6rem;
+  .logo {
+    background-color: #000;
+
+    img {
+      height: 3rem;
+      margin-left: 6rem;
+      background-color: #000;
+    }
   }
   .nav-list {
     display: flex;
     // width: 1440px;
     gap: 1rem;
     margin-right: 6rem;
+    background-color: #000;
+
     a {
       border: 1px solid rgba(211, 211, 211, 0.486);
       padding: 0.6rem 1.5rem;
       text-decoration: none;
-      color: #fff;
+      color: rgb(247, 245, 240);
       font-size: 0.9rem;
       font-weight: 600;
       border-radius: 30px;
-    }
-    :hover {
-      color: #000;
-      background-color: #ffffffb4;
-      transition: all 0.3s ease-in-out;
+      background-color: #000;
+      &:hover {
+        color: #000;
+        background: #ffffffb4;
+        transition: all 0.3s ease-in-out;
+      }
     }
   }
 }
 
-
-  button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 0.9rem;
-    font-weight: 600;
-    border-radius: 30px;
-    padding: 0.6rem 1.5rem;
-    border: none;
-    cursor: pointer;
-    :hover{
-        background-color: darkorange;
-    }
-
-    span {
-      display: flex;
-      margin-left: 1rem;
-    }
+.register {
+  @include mixin.flex-center;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 30px;
+  padding: 0.6rem 1.5rem;
+  border: none;
+  cursor: pointer;
+  &:hover {
+    background: darkorange;
+    transform: scale(1.09);
+    transition: all 0.3s ease;
   }
 
+  & span {
+    display: flex;
+    margin-left: 1rem;
+  
+  }
+}

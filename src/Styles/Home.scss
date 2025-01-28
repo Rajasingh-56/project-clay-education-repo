@@ -1,24 +1,202 @@
-.company-info {
-  background-color: bisque  ;
-  padding: 10rem;
-  color: #000;
+@use "../Styles/mixin.scss" as mix;
 
+.home-section {
+  background-color: rgb(252, 247, 238);
+  padding: 4rem 2rem;
+  color: #000;
+  // margin-top: 4rem
 }
 .home {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 2rem;
-  color: #000;
+  @include mix.flex-center;
+  gap: 8rem;
+  // margin-top: 4rem;
+  // position: relative;
 
+  .right-side-img {
+    @include mix.flex-center-column;
+    // gap: 1.5rem;
+    position: relative;
 
-  h2{
-    font-size: 1rem;
-    color: #000;
+    .pro {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      // text-align: center;
+      border: 1px solid black;
+      padding: 0.75rem;
+      width: 9rem;
+      height: 12rem;
+      border-radius: 20px;
+
+      .pro-img {
+        img {
+          width: 6.5rem;
+          height: 6.5rem;
+          background-size: cover;
+          border-radius: 20px;
+        }
+      }
+    }
   }
 }
 
+.pod-user {
+  transform: rotate(-20deg);
+  left: -12rem;
+  z-index: 2;
+  position: absolute;
+  top: -8rem;
+}
+.brand-user {
+  transform: rotate(10deg);
+  z-index: 1;
+  position: absolute;
+  top: 2rem;
+  left: -10rem;
+}
 
+.song-user {
+  transform: rotate(-10deg);
+  z-index: 0;
+  position: absolute;
+  top: 13rem;
+  left: -5rem;
+}
+.prince-user {
+  transform: rotate(20deg);
+  z-index: 2;
+  position: absolute;
+  top: -8rem;
+  right: -12rem;
+}
+.ai-user {
+  transform: rotate(10deg);
+  z-index: 1;
+  position: absolute;
+  top: 3rem;
+  right: -10rem;
+}
+.startup-user {
+  transform: rotate(-20deg);
+  z-index: 0;
+  position: absolute;
+  top: 13rem;
+  right: -5rem;
+}
 
+.clr-yellow {
+  background-color: yellow;
+  font-size: 0.9rem;
+}
+.clr-blue {
+  background-color: rgb(50, 170, 218);
+  font-size: 0.9rem;
+}
+.clr-pink {
+  background-color: rgb(219, 120, 137);
+  font-size: 0.9rem;
+}
 
+.info {
+  @include mix.flex-center-column;
+  text-align: center;
+
+  .student-details {
+    @include mix.flex-center;
+    gap: 0.5rem;
+    background-color: rgb(254, 253, 245);
+    // background-color: red;
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+    // position: relative;
+
+    .user-image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 100%;
+        border: 2px solid #a89696;
+      }
+    }
+    p {
+      font-size: 0.75rem;
+      color: rgb(40, 62, 50);
+    }
+  }
+
+  h1 {
+    font-size: 3.75rem;
+    line-height: 1;
+    letter-spacing: -0.05em;
+    margin-top: 1.5rem;
+    font-weight: 600;
+  }
+  .text-msg {
+    p {
+      font-size: 1.125rem;
+      line-height: 1.75rem;
+      color: rgb(40, 62, 50);
+      margin-top: 1.5rem;
+    }
+  }
+
+  .btns {
+    @include mix.flex-center;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+
+    .search-btn {
+      width: 3.5rem;
+      height: 3.5rem;
+      border-radius: 100%;
+      border: 1px solid lightgray;
+      cursor: pointer;
+      @include mix.flex-center;
+      background-color: rgb(247, 245, 240);
+
+      & span {
+        width: 1.5rem;
+        height: 1.5rem;
+        @include mix.flex-center;
+        & svg {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+    .register-btn {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 0.95rem 2rem;
+      font-size: 0.9rem;
+      font-weight: 600;
+      background-color: #000;
+      color: #fff;
+      border: none;
+      border-radius: 2rem;
+      cursor: pointer;
+      &:hover {
+        background: darkorange;
+        transform: scale(1.09);
+        transition: all 0.3s ease;
+      }
+      & span {
+        @include mix.flex-center;
+        & svg {
+          background-color: #000;
+
+          &:hover {
+            background-color: darkorange;
+            transform: scale(1.09);
+            transition: all 0.3s ease;
+          }
+        }
+      }
+    }
+  }
+}
