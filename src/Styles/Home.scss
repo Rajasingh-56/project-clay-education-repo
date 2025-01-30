@@ -4,13 +4,11 @@
   background-color: rgb(252, 247, 238);
   padding: 8rem 2rem;
   color: #000;
-  // margin-top: 4rem
+  height: 100vh;
 }
 .home {
   @include mix.flex-center;
   gap: 8rem;
-  // margin-top: 4rem;
-  // position: relative;
 
   .right-side-img {
     @include mix.flex-center-column;

@@ -1,7 +1,10 @@
 @use "../Styles/mixin.scss";
 
 .navigation-section {
-  background: #000;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 .navigation {
@@ -21,7 +24,6 @@
   }
   .nav-list {
     display: flex;
-    // width: 1440px;
     gap: 1rem;
     margin-right: 6rem;
     background-color: #000;

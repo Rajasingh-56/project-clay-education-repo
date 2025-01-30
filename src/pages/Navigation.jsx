@@ -3,7 +3,6 @@ import "../Styles/Navigation.scss";
 import BrandLogo from "../assets/clay-image.png";
 import { Link } from "react-router-dom";
 import "../Styles/Navigation.scss";
-// import { Outlet } from "react-router";
 import { FaArrowRight } from "react-icons/fa6";
 
 const Navigation = () => {
@@ -30,12 +29,14 @@ const Navigation = () => {
             Join community{" "}
           </Link>
 
-          <button className="register" type="button">Register Now <span><FaArrowRight/></span></button>
+          <button className="register" type="button">
+            Register Now{" "}
+            <span>
+              <FaArrowRight />
+            </span>
+          </button>
         </div>
       </nav>
-      {/* <div className="company-info">
-        <Outlet />
-      </div> */}
     </div>
   );
 };
