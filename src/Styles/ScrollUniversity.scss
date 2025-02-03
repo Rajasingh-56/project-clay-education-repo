@@ -5,26 +5,26 @@
   position: relative;
   margin-inline: auto;
   width: 100%;
-  height: 6rem;
   white-space: nowrap;
   overflow: hidden;
-  display: flex;
-  align-items: center;
   background-color: rgb(247 245 240);
-  padding: 0.75rem;
-
+  
   .item {
-    width: 100%;
-    left: 0;
-    animation: slide 25s linear infinite;
+    width: calc(100% / 8);
+    height: 6rem;
+    padding: 0.75rem;
+    animation: slide 15s linear infinite;
     display: inline-block;
     background-color: rgb(247 245 240);
-
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     img {
-      margin: 0 3vw;
-      width: 6vw;
+      height: 100%;
+      width: 100%;
+      // margin: 0 3vw;
       object-fit: contain;
-      aspect-ratio: 3/2;
+      // aspect-ratio: 3/2;
       //   background: transparent;
     }
   }
@@ -36,7 +36,7 @@
     transform: translateX(0);
   }
   100% {
-    -webkit-transform: translateX(-100%);
-    transform: translateX(-100%);
+    -webkit-transform: translateX(-100vw);
+    transform: translateX(-100vw);
   }
 }

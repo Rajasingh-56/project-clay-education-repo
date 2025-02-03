@@ -5,6 +5,9 @@ import { SiAnytype } from "react-icons/si";
 import Community from "./Community";
 import FormPage from "./FormPage";
 import ScrollUniversity from "./ScrollUniversity";
+import Layout from "./Layout";
+import Footer from "./Footer";
+import { useNavigate } from "react-router-dom";
 
 import Mini1 from "../assets/mini-1.webp";
 import Mini2 from "../assets/mini-2.webp";
@@ -20,6 +23,11 @@ import Pofessor5 from "../assets/pro5.png";
 import Pofessor6 from "../assets/pro6.png";
 
 const Home = () => {
+  const navigate = useNavigate();
+
+  const goToFormPage=()=>{
+    navigate("/login")
+  }
   return (
     <>
       <div className="home-section">
@@ -88,7 +96,7 @@ const Home = () => {
                   <CiSearch />
                 </span>
               </button>
-              <button className="register-btn" type="button">
+              <button className="register-btn" type="button" onClick={goToFormPage}>
                 Register Now{" "}
                 <span>
                   <FaArrowRight />
@@ -129,9 +137,11 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <ScrollUniversity/>
-      <Community />;
-      <FormPage />;
+      <ScrollUniversity />
+      <Community />
+      <FormPage />
+      <Layout />
+      <Footer />
     </>
   );
 };

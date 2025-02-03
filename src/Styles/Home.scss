@@ -184,14 +184,11 @@
       }
       & span {
         @include mix.flex-center;
-        & svg {
-          background-color: #000;
 
-          &:hover {
-            background-color: darkorange;
-            transform: scale(1.09);
-            transition: all 0.3s ease;
-          }
+        &:hover {
+          background-color: darkorange;
+          transform: scale(1.09);
+          transition: all 0.3s ease;
         }
       }
     }

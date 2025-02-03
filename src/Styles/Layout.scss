@@ -1,0 +1,45 @@
+@use "../Styles/mixin.scss" as mix;
+
+.layout-section {
+  @include mix.flex-center;
+  background-color: rgb(252, 247, 238);
+  gap: 1.5rem;
+  padding: 4.5rem 0;
+  .lyt {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+    border: 2px solid #000;
+    padding: 1.5rem;
+    width: 19rem;
+    // gap: 1rem;
+    height: 450px;
+    border-radius: 1rem;
+    img {
+      width: 16rem;
+      height: 16rem;
+      border: 2px solid #000;
+      margin-bottom: 1rem;
+      border-radius: 1rem;
+    }
+    h2 {
+      font-size: 1.125rem;
+      line-height: 1.75rem;
+      margin-bottom: 0.5rem;
+    }
+    p {
+      color: rgb(55 65 81);
+    }
+  }
+}
+
+.signup {
+  background-color: rgb(163,216,255);
+}
+.discuss {
+  background-color: rgb(255,219,71);
+}
+.matched {
+  background-color: rgb(254,171,206);
+}

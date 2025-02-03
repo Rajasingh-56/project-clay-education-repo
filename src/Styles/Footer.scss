@@ -1,0 +1,54 @@
+@use "../Styles/mixin.scss" as mix;
+
+.footer-sec {
+  background-color: #000;
+  color: #fff;
+  padding: 4rem 0;
+  .links {
+    padding: 0 2.5rem;
+    .footer-base {
+      // display: flex;
+      // flex-direction: column;
+      // justify-content: center;
+      .logo-sec {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .clay-img {
+          width: 7rem;
+          height: 100%;
+          cursor: pointer;
+        }
+        .linkedin {
+          width: 2.5rem;
+          height: 2.5rem;
+          background-color: #fff;
+          border-radius: 10px;
+        }
+      }
+      nav ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 3rem;
+        margin: 2.5rem;
+
+        li {
+          list-style: none;
+          a {
+            text-decoration: none;
+            color: #fff;
+          }
+        }
+      }
+
+      .project-clay {
+        padding: 1.5rem 0.5rem;
+        border-top: 1px solid#fff;
+        margin-bottom: 1rem;
+        p {
+        }
+      }
+    }
+  }
+}

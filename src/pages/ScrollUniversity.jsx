@@ -29,11 +29,12 @@ const ScrollUniversity = () => {
         </div>
       ))}
       {universityImages.map((img, index) => (
-        <div key={`duplicate-${index}`} className={`item item${index + 1}`}>
+        <div key={index} className={`item item${index + 1}`}>
           <img src={img} alt={`university-${index + 1}`} />
         </div>
       ))}
     </div>
   );
 };
+
 export default ScrollUniversity;
