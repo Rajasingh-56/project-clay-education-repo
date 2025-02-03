@@ -25,9 +25,6 @@ import Pofessor6 from "../assets/pro6.png";
 const Home = () => {
   const navigate = useNavigate();
 
-  const goToFormPage=()=>{
-    navigate("/login")
-  }
   return (
     <>
       <div className="home-section">
@@ -96,7 +93,7 @@ const Home = () => {
                   <CiSearch />
                 </span>
               </button>
-              <button className="register-btn" type="button" onClick={goToFormPage}>
+              <button className="register-btn" type="button">
                 Register Now{" "}
                 <span>
                   <FaArrowRight />
